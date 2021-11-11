@@ -1,4 +1,4 @@
-
+﻿
 #include <ESP8266WiFi.h>
 #include <NTPClient.h>
 #include <WiFiUdp.h>
@@ -104,9 +104,9 @@ void loop () {
     break;
 
     case 7:
-      strip.setPixelColor(4, 100, 120, 100); //LED mit den Index 4 an.        Index 4    =    Uhrzeit: 4
-      strip.setPixelColor(3, 100, 120, 100); //LED mit den Index 3 an.        Index 3    =    Uhrzeit: 2   
-      strip.setPixelColor(2, 100, 120, 100); //LED mit den Index 2 an.        Index 2    =    Uhrzeit: 1
+      strip.setPixelColor(4, 100, 120, 100); //LED mit den Index 4 an.       
+      strip.setPixelColor(3, 100, 120, 100); //LED mit den Index 3 an.      
+      strip.setPixelColor(2, 100, 120, 100); //LED mit den Index 2 an.       
                                              //                              ____________________________
                                              //                                                       7 (für 17 Uhr die 7)
     break;
@@ -150,7 +150,7 @@ void loop () {
     if(moduloMinuten == 2 || moduloMinuten == 3 || moduloMinuten == 6 || moduloMinuten == 7) { // z.b. 00:02 | 00:03 | 00:06  | 00:07
       strip.setPixelColor(10, 100, 120, 100); //LED mit den Index 10 an. 
     }
-    if(moduloMinuten == 4 || moduloMinuten == 5) { // z.b. 00:04 | 00:05
+    if(moduloMinuten == 4 || moduloMinuten == 5 || moduloMinuten == 6 || moduloMinuten == 7) { // z.b. 00:04 | 00:05
       strip.setPixelColor(11, 100, 120, 100); //LED mit den Index 11 an. 
     }
     if(moduloMinuten == 8 || moduloMinuten == 9) { // z.b. 00:08 | 00:09
