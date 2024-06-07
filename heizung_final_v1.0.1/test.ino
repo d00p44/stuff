@@ -1,7 +1,10 @@
 #define BUTTON_PIN 8     // PB0
-#define LED_PIN 2        // PB2
-#define PWM_PIN 5        // PB5
-#define TEMP_PIN A1      // PB1
+#define LED_PIN 3        // PD3
+#define PWM_PIN 5        // PD5
+#define TEMP_PIN A1      // PC1
+// #define PWM2_PIN 6 // PD6
+// #define LED2_PIN 4 // PD4
+// #define BUTTON2_PIN 9 // PB1
 
 #define PWM_OFF 0
 #define PWM_25 64        // 25% of 255
